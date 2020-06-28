@@ -11,3 +11,7 @@ Features:
 • Increase/Decrease font size
 
 • Save/Restore prefered font size
+
+Screenshot:
+
+![Screenshot](https://github.com/spnm/LinkedIn-Learning-Captions/blob/master/image.png)

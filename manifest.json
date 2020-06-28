@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "LinkedIn Learning captions",
+    "description": "This extension is used for setting font size in LinkedIn Learning video captions.",
+    "version": "0.0.0.1",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "all_frames": false,
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}

@@ -15,7 +15,7 @@
     {
       "all_frames": false,
       "js": [
-        "content.js"
+        "content.js", "constants.js"
       ],
       "matches": [
         "https://www.linkedin.com/learning/*"

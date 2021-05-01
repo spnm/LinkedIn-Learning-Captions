@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
     var enlargeButton = document.getElementById('enlargeFonts');
     enlargeButton.addEventListener('click', function () {
-        sendMessage('increase');
+        sendMessage(actions.INCREASE);
     }, false);
 
     var reduceButton = document.getElementById('reduceFonts');
     reduceButton.addEventListener('click', function () {
-        sendMessage('decrease');
+        sendMessage(actions.DECREASE);
     }, false);
 
     var saveFontButton = document.getElementById('saveFontSize');
     saveFontButton.addEventListener('click', function () {
-        sendMessage('save');
+        sendMessage(messages.SAVE);
     }, false);
 
     var applySavedFontButton = document.getElementById('applySavedFontSize');
     applySavedFontButton.addEventListener('click', function () {
-        sendMessage('applySaved');
+        sendMessage(messages.APPLY_SAVED);
     }, false);
     
 }, false);

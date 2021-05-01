@@ -3,10 +3,10 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 });
 
 function resolveMessage(message) {
-    if (message === "save") {
+    if (message === messages.SAVE) {
         saveFontSize();
     }
-    else if (message === "applySaved") {
+    else if (message === messages.APPLY_SAVED) {
         applySavedFontSize();
     }
     else {
@@ -43,11 +43,11 @@ function changeFontSizeInDom(action) {
 function changeFontSizeBy1px(action, element) {
     let style = window.getComputedStyle(element, null).getPropertyValue('font-size');
     let currentSize = parseInt(style);
-    if (action === 'increase') {
+    if (action === actions.INCREASE) {
         currentSize++;
     }
 
-    if (action === 'decrease') {
+    if (action === actions.DECREASE) {
         currentSize--;
     }
     return currentSize.toString();

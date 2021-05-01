@@ -15,3 +15,5 @@ Features:
 Screenshot:
 
 ![Screenshot](https://github.com/spnm/LinkedIn-Learning-Captions/blob/master/image.png)
+
+Extension: https://chrome.google.com/webstore/detail/linkedin-learning-caption/ggdakknlgmplegladciiikoiabaedecb
